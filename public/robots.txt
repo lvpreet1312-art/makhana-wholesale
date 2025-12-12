@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dryfruitstore.com/sitemap.xml
+
+User-agent: *
+Disallow: /api/
+Disallow: /.next/
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1

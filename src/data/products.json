@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "name": "Makhana ",
+    "slug": "makhana",
+    "image": "/products/makhana.jpg",
+    "description": "Premium quality makhana harvested from pristine water bodies, carefully dried and packed to maintain freshness.",
+    "grade": "Grade A",
+    "price": "₹450/kg",
+    "nutritionFacts": {
+      "servingSize": "100g",
+      "calories": 106,
+      "protein": "4.3g",
+      "fiber": "14.2g",
+      "fat": "0.1g",
+      "carbs": "22.7g"
+    },
+    "healthBenefits": [
+      "Rich in antioxidants - helps combat free radicals",
+      "Low in calories - perfect for weight management",
+      "High in fiber - supports digestive health",
+      "Improves kidney function and circulation",
+      "Anti-inflammatory properties",
+      "Supports heart health with essential minerals",
+      "Gluten-free and vegan-friendly",
+      "Aids in better sleep quality"
+    ],
+    "buyLinks": {
+      "amazon": "https://amazon.in",
+      "flipkart": "https://flipkart.com",
+      "meesho": "https://meesho.com"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Almonds",
+    "slug": "almonds",
+    "image": "/products/almonds.jpg",
+    "description": "Nutrient-dense almonds sourced from finest orchards, hand-selected for superior quality and taste.",
+    "grade": "Grade A",
+    "price": "₹650/kg",
+    "nutritionFacts": {
+      "servingSize": "100g",
+      "calories": 579,
+      "protein": "21.2g",
+      "fiber": "12.5g",
+      "fat": "49.9g",
+      "carbs": "21.6g"
+    },
+    "healthBenefits": [
+      "Excellent source of vitamin E - powerful antioxidant",
+      "Supports brain health and cognitive function",
+      "Rich in healthy fats - promotes heart health",
+      "Helps regulate blood sugar levels",
+      "Improves cholesterol profile",
+      "Supports bone health with magnesium and calcium",
+      "Promotes digestive health",
+      "Aids in weight management despite high calories"
+    ],
+    "buyLinks": {
+      "amazon": "https://amazon.in",
+      "flipkart": "https://flipkart.com",
+      "meesho": "https://meesho.com"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Raisins",
+    "slug": "raisins",
+    "image": "/products/raisins.jpg",
+    "description": "Naturally sweet raisins made from premium sun-dried grapes, perfect for snacking and cooking.",
+    "grade": "Grade A",
+    "price": "₹380/kg",
+    "nutritionFacts": {
+      "servingSize": "100g",
+      "calories": 299,
+      "protein": "3.1g",
+      "fiber": "3.7g",
+      "fat": "0.3g",
+      "carbs": "79.8g"
+    },
+    "healthBenefits": [
+      "Natural energy boost - high in natural sugars",
+      "Rich in iron - prevents anemia",
+      "Improves digestive health with dietary fiber",
+      "Boosts immune system with antioxidants",
+      "Supports bone health",
+      "Promotes heart health and reduces blood pressure",
+      "Natural remedy for constipation",
+      "Improves skin health and appearance"
+    ],
+    "buyLinks": {
+      "amazon": "https://amazon.in",
+      "flipkart": "https://flipkart.com",
+      "meesho": "https://meesho.com"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Cashews",
+    "slug": "cashews",
+    "image": "/products/cashews.jpg",
+    "description": "Creamy and delicious cashews, carefully processed to maintain maximum flavor and nutritional value.",
+    "grade": "Grade A",
+    "price": "₹550/kg",
+    "nutritionFacts": {
+      "servingSize": "100g",
+      "calories": 553,
+      "protein": "18.2g",
+      "fiber": "3.3g",
+      "fat": "43.9g",
+      "carbs": "30.2g"
+    },
+    "healthBenefits": [
+      "Rich in copper - essential for bone health",
+      "Supports brain function and mental clarity",
+      "Promotes heart health with monounsaturated fats",
+      "Improves eye health with lutein and zeaxanthin",
+      "Aids weight management when consumed in moderation",
+      "Supports immune system function",
+      "Reduces inflammation in the body",
+      "Helps maintain healthy blood sugar levels"
+    ],
+    "buyLinks": {
+      "amazon": "https://amazon.in",
+      "flipkart": "https://flipkart.com",
+      "meesho": "https://meesho.com"
+    }
+  }
+]
