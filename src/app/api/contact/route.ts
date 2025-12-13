@@ -61,7 +61,11 @@ function validateInput(name: string, email: string, message: string): string | n
 
 export async function POST(request: NextRequest) {
   try {
-    const clientId = request.headers.get("x-forwarded-for") || request.ip || "unknown";
+    const clientId =
+  request.headers.get("x-forwarded-for") ||
+  request.headers.get("x-real-ip") ||
+  "unknown";
+
 
     if (isRateLimited(clientId)) {
       return NextResponse.json(
