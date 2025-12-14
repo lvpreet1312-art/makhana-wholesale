@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Us - DryFruit Store",
-  description: "Learn about our mission to provide premium quality dry fruits and our commitment to health and wellness.",
+  title: "About Us - ISKI Enterprises",
+  description: "Learn about our mission to provide premium quality makhana and our commitment to health and wellness.",
 };
 
 export default function AboutPage() {
@@ -18,10 +18,10 @@ export default function AboutPage() {
             </span>
           </div>
           <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-green-600 to-green-800 bg-clip-text text-transparent mb-6">
-            About DryFruit Store
+            About ISKI Enterprises
           </h1>
           <p className="text-lg text-gray-600 max-w-3xl leading-relaxed">
-            We are committed to bringing you the finest quality dry fruits, sourced from trusted farms and delivered with care to your doorstep.
+            We are committed to bringing you the finest quality makhana, sourced from trusted farms and delivered with care to your doorstep.
           </p>
         </div>
       </section>
@@ -33,7 +33,7 @@ export default function AboutPage() {
               <h2 className="text-4xl font-bold text-gray-900 mb-8">Our Story</h2>
               <div className="space-y-4">
                 <p className="text-gray-700 leading-relaxed text-lg">
-                  DryFruit Store was founded with a simple vision: to make <span className="font-semibold text-green-600">premium quality dry fruits</span> accessible to everyone. We believe that good health starts with good nutrition.
+                  ISKI Enterprises was founded with a simple vision: to make <span className="font-semibold text-green-600">premium quality makhana</span> accessible to everyone. We believe that good health starts with good nutrition.
                 </p>
                 <p className="text-gray-700 leading-relaxed text-lg">
                   Over the years, we have built <span className="font-semibold text-green-600">strong relationships with farmers</span> and suppliers across India, ensuring that every product we sell meets our strict quality standards.
@@ -84,7 +84,7 @@ export default function AboutPage() {
                 <div className="text-5xl mb-4">🔍</div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Transparency</h3>
                 <p className="text-gray-700 leading-relaxed">
-                  Complete transparency in sourcing, processing, and quality control. You deserve to know exactly what you're buying.
+                  Complete transparency in sourcing, processing, and quality control. You deserve to know exactly what you’re buying.
                 </p>
               </div>
             </div>
@@ -147,11 +147,11 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Why Choose Us?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
-              "Grade A Premium Quality Products",
+              "Grade A Premium Makhana Quality",
               "100% Natural and Organic",
-              "Rigorous Quality Testing",
-              "Transparent Sourcing",
-              "Expert Nutrition Guidance",
+              "Rigorous Lab Testing",
+              "Transparent Farm-to-Table Sourcing",
+              "Nutritional Health Guidance",
               "Customer-Centric Approach",
             ].map((item, index) => (
               <div key={index} className="flex gap-4">
@@ -167,7 +167,7 @@ export default function AboutPage() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Get In Touch</h2>
           <p className="text-gray-700 text-lg mb-8">
-            Have questions? We'd love to hear from you. Contact us today for any inquiries or feedback.
+            Have questions? We’d love to hear from you. Contact us today for any inquiries or feedback.
           </p>
           <a
             href="/contact"

@@ -71,7 +71,7 @@ export default function ContactForm() {
       setStatus("success");
       setFormData({ name: "", email: "", message: "" });
       setTimeout(() => setStatus("idle"), 5000);
-    } catch (error) {
+    } catch {
       setStatus("error");
       setErrorMsg("Failed to send message. Please try again.");
       setTimeout(() => setStatus("idle"), 5000);
@@ -135,7 +135,7 @@ export default function ContactForm() {
       {status === "success" && (
         <div className="mb-6 p-4 bg-green-50 border border-green-200 text-green-700 rounded-lg text-sm font-medium flex items-center gap-2">
           <span>✓</span>
-          Message sent successfully! We'll get back to you soon.
+          Message sent successfully! We’ll get back to you soon.
         </div>
       )}
 

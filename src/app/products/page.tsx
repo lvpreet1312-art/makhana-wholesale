@@ -5,7 +5,7 @@ import products from "@/data/products.json";
 export const metadata: Metadata = {
   title: "Products - ISKI Enterprises",
   description:
-    "Explore our premium range of dry fruits including makhana, almonds, raisins, and cashews. Available for bulk and retail with licensed, Grade-A quality.",
+    "Explore our premium range of makhana. Available for bulk and retail with licensed, Grade-A quality.",
   keywords: [
     "ISKI Enterprises",
     "Products",
@@ -20,9 +20,6 @@ export const metadata: Metadata = {
     "Dry Fruits Supplier",
     "Bulk Dry Fruits",
     "Retail Dry Fruits",
-    "Almonds",
-    "Raisins",
-    "Cashews",
     "Buy Dry Fruits Online India",
     "Fresh Dry Fruits Distributor"
   ],

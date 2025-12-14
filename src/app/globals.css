@@ -103,6 +103,10 @@
     animation: bounce-slow 3s ease-in-out infinite;
   }
   
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  
   .backdrop-blur-glass {
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);

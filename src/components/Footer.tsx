@@ -62,21 +62,6 @@ export default function Footer() {
                   → Makhana
                 </Link>
               </li>
-              <li>
-                <Link href="/products/almonds" className="text-gray-400 hover:text-green-400 transition text-sm">
-                  → Almonds
-                </Link>
-              </li>
-              <li>
-                <Link href="/products/raisins" className="text-gray-400 hover:text-green-400 transition text-sm">
-                  → Raisins
-                </Link>
-              </li>
-              <li>
-                <Link href="/products/cashews" className="text-gray-400 hover:text-green-400 transition text-sm">
-                  → Cashews
-                </Link>
-              </li>
             </ul>
           </div>
 

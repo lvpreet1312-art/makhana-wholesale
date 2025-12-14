@@ -15,21 +15,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "DryFruit Store - Premium Quality Dry Fruits Online",
+  title: "DryFruit Store - Premium Quality Makhana Online",
   description:
-    "Shop premium quality dry fruits including makhana, almonds, raisins, and cashews. Farm-fresh, naturally dried, delivered to your doorstep.",
+    "Shop premium quality makhana. Farm-fresh, naturally dried, delivered to your doorstep.",
   keywords: [
     "dry fruits",
     "makhana",
-    "almonds",
-    "raisins",
-    "cashews",
     "organic",
     "healthy snacks",
   ],
   openGraph: {
-    title: "DryFruit Store - Premium Quality Dry Fruits",
-    description: "Shop the finest dry fruits online",
+    title: "DryFruit Store - Premium Quality Makhana",
+    description: "Shop the finest makhana online",
     type: "website",
   },
   robots: {

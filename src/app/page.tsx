@@ -1,13 +1,12 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import ProductCard from "@/components/ProductCard";
-import products from "@/data/products.json";
 import HeroSection from "@/components/HeroSection";
+import AboutSection from "@/components/AboutSection";
 
 export const metadata: Metadata = {
-  title: "Home - ISKI Enterprises",
+  title: "Premium Plain Makhana - ISKI Enterprises",
   description:
-    "Premium quality dry fruits . Makhana, almonds, raisins, and cashews. 100% natural, organic, and freshly sourced.",
+    "Shop premium quality Plain Makhana. 100% natural, organic, and freshly sourced. Best prices online.",
 };
 
 export default function Home() {
@@ -15,127 +14,71 @@ export default function Home() {
     <div>
       <HeroSection />
 
-      <section className="py-20 bg-white">
+      <AboutSection />
+
+      <section className="py-20 bg-gradient-to-b from-sage-light to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="inline-block px-4 py-2 bg-sage text-forest text-sm font-semibold rounded-full mb-4">
-              Our Collection
-            </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Featured Products
-            </h2>
-            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-              Carefully selected dry fruits with exceptional quality and nutritional value
-            </p>
-          </div>
-          <div className="w-full 
-  max-w-[300px]   
-  sm:max-w-3xl
-  lg:max-w-6xl
-  xl:max-w-7xl
-  mx-auto
-  px-3 sm:px-6 lg:px-8
-">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 place-items-center">
-            {products.map((product) => (
-              <ProductCard key={product.id} product={product} />
-            ))}
-            </div>
-          </div>
-          <div className="text-center mt-16">
-            <Link
-              href="/products"
-              className="inline-block bg-forest text-white px-8 py-4 rounded-lg hover:bg-forest-light transition font-semibold shadow-lg hover:shadow-xl"
-            >
-              Explore All Products
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <section className="relative bg-sage-light py-20 overflow-hidden">
-        <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
-        
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center mb-16">
             <span className="inline-block px-4 py-2 bg-white text-forest text-sm font-semibold rounded-full mb-4 border border-forest">
-              Our Promise
+              Why Choose ISKI
             </span>
             <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
-              Why Choose Us?
+              Why Our Makhana?
             </h2>
-            <p className="text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed">
-              Committed to delivering the best dry fruits with premium quality and exceptional service
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+              We’re committed to bringing you the finest quality makhana with exceptional taste and health benefits
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 border border-sage hover:border-forest overflow-hidden">
-              <div className="absolute inset-0 bg-sage opacity-0 group-hover:opacity-50 transition-opacity duration-500"></div>
-              <div className="absolute -top-10 -right-10 w-32 h-32 bg-sage-dark rounded-full opacity-0 group-hover:opacity-30 blur-2xl transition-all duration-500"></div>
+              <div className="absolute inset-0 bg-sage opacity-0 group-hover:opacity-30 transition-opacity duration-500"></div>
+              <div className="absolute -top-10 -right-10 w-32 h-32 bg-sage-dark rounded-full opacity-0 group-hover:opacity-20 blur-2xl transition-all duration-500"></div>
               
               <div className="relative z-10">
-                <div className="w-24 h-24 bg-sage rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-md">
-                  <span className="text-5xl">🌾</span>
+                <div className="w-16 h-16 bg-sage rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-all duration-500">
+                  <span className="text-3xl">🌾</span>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center group-hover:text-forest transition-colors duration-300">
-                  Premium Quality
+                <h3 className="text-xl font-bold text-gray-900 mb-3 text-center group-hover:text-forest transition-colors duration-300">
+                  Farm Fresh
                 </h3>
-                <p className="text-gray-600 text-center leading-relaxed mb-4">
-                  Hand-selected from the finest farms, ensuring superior taste and optimal nutritional value in every bite.
+                <p className="text-gray-600 text-center text-sm leading-relaxed">
+                  Hand-selected from pristine water bodies in India’s finest makhana-growing regions, ensuring premium quality.
                 </p>
-                <div className="flex items-center justify-center gap-1 text-forest text-sm font-semibold">
-                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  Farm Fresh Guarantee
-                </div>
               </div>
             </div>
 
             <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 border border-sage hover:border-forest overflow-hidden">
-              <div className="absolute inset-0 bg-sage opacity-0 group-hover:opacity-50 transition-opacity duration-500"></div>
-              <div className="absolute -top-10 -right-10 w-32 h-32 bg-sage-dark rounded-full opacity-0 group-hover:opacity-30 blur-2xl transition-all duration-500"></div>
+              <div className="absolute inset-0 bg-sage opacity-0 group-hover:opacity-30 transition-opacity duration-500"></div>
+              <div className="absolute -top-10 -right-10 w-32 h-32 bg-sage-dark rounded-full opacity-0 group-hover:opacity-20 blur-2xl transition-all duration-500"></div>
               
               <div className="relative z-10">
-                <div className="w-24 h-24 bg-sage rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-md">
-                  <span className="text-5xl">✅</span>
+                <div className="w-16 h-16 bg-sage rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-all duration-500">
+                  <span className="text-3xl">🔬</span>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center group-hover:text-forest transition-colors duration-300">
-                  Quality Assured
+                <h3 className="text-xl font-bold text-gray-900 mb-3 text-center group-hover:text-forest transition-colors duration-300">
+                  Lab Tested
                 </h3>
-                <p className="text-gray-600 text-center leading-relaxed mb-4">
-                  Rigorous testing and quality control at every stage of processing to ensure purity and safety.
+                <p className="text-gray-600 text-center text-sm leading-relaxed">
+                  Every batch undergoes rigorous testing for purity, safety, and nutritional quality. 100% certified.
                 </p>
-                <div className="flex items-center justify-center gap-1 text-forest text-sm font-semibold">
-                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  Lab Tested & Certified
-                </div>
               </div>
             </div>
 
             <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 border border-sage hover:border-forest overflow-hidden">
-              <div className="absolute inset-0 bg-sage opacity-0 group-hover:opacity-50 transition-opacity duration-500"></div>
-              <div className="absolute -top-10 -right-10 w-32 h-32 bg-sage-dark rounded-full opacity-0 group-hover:opacity-30 blur-2xl transition-all duration-500"></div>
+              <div className="absolute inset-0 bg-sage opacity-0 group-hover:opacity-30 transition-opacity duration-500"></div>
+              <div className="absolute -top-10 -right-10 w-32 h-32 bg-sage-dark rounded-full opacity-0 group-hover:opacity-20 blur-2xl transition-all duration-500"></div>
               
               <div className="relative z-10">
-                <div className="w-24 h-24 bg-sage rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-md">
-                  <span className="text-5xl">🚀</span>
+                <div className="w-16 h-16 bg-sage rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-all duration-500">
+                  <span className="text-3xl">📦</span>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center group-hover:text-forest transition-colors duration-300">
+                <h3 className="text-xl font-bold text-gray-900 mb-3 text-center group-hover:text-forest transition-colors duration-300">
                   Fast Delivery
                 </h3>
-                <p className="text-gray-600 text-center leading-relaxed mb-4">
-                  Carefully packaged and delivered to ensure maximum freshness and on-time arrival at your doorstep.
+                <p className="text-gray-600 text-center text-sm leading-relaxed">
+                  Carefully packaged and delivered within 2-3 days to ensure freshness reaches your doorstep.
                 </p>
-                <div className="flex items-center justify-center gap-1 text-forest text-sm font-semibold">
-                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  2-3 Days Shipping
-                </div>
               </div>
             </div>
           </div>
@@ -144,84 +87,94 @@ export default function Home() {
 
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <span className="inline-block px-4 py-2 bg-sage text-forest text-sm font-semibold rounded-full mb-4">
-              Knowledge Hub
-            </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Latest Blog Posts
-            </h2>
-            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-              Learn about the health benefits and nutritional value of our premium dry fruits
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <article className="group bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-sage overflow-hidden">
-              <div className="h-2 bg-forest"></div>
-              <div className="p-6">
-                <span className="inline-block text-sm font-semibold text-forest bg-sage px-3 py-1 rounded-full mb-3">
-                  Dec 1, 2024
-                </span>
-                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-forest transition">
-                  Health Benefits of Makhana
-                </h3>
-                <p className="text-gray-600 text-sm mb-5 leading-relaxed">
-                  Discover why makhana has been revered in traditional medicine for centuries and its amazing health benefits...
-                </p>
-                <Link href="/blog/health-benefits-of-makhana" className="inline-flex items-center text-forest font-semibold hover:text-forest-light group-hover:gap-2 transition">
-                  Read More <span className="group-hover:translate-x-1 transition">→</span>
-                </Link>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+              <span className="inline-block px-4 py-2 bg-sage text-forest text-sm font-semibold rounded-full mb-4">
+                Health & Nutrition
+              </span>
+              <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">
+                Makhana: Nature’s Superfood
+              </h2>
+              <p className="text-gray-600 text-lg mb-6 leading-relaxed">
+                Makhana, also known as fox nuts, has been used in traditional Ayurvedic medicine for centuries. These water-grown seeds are packed with essential nutrients and offer numerous health benefits for the whole family.
+              </p>
+              <ul className="space-y-4 mb-8">
+                <li className="flex items-start gap-3">
+                  <svg className="w-6 h-6 text-forest flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <div>
+                    <h3 className="font-semibold text-gray-900">Low Calorie Snack</h3>
+                    <p className="text-gray-600">Just 106 calories per 100g, perfect for weight management</p>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <svg className="w-6 h-6 text-forest flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <div>
+                    <h3 className="font-semibold text-gray-900">Rich in Antioxidants</h3>
+                    <p className="text-gray-600">Combats free radicals and supports overall wellness</p>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <svg className="w-6 h-6 text-forest flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <div>
+                    <h3 className="font-semibold text-gray-900">High in Fiber</h3>
+                    <p className="text-gray-600">14.2g per 100g supports digestive health</p>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <svg className="w-6 h-6 text-forest flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <div>
+                    <h3 className="font-semibold text-gray-900">Gluten-Free & Vegan</h3>
+                    <p className="text-gray-600">Suitable for all dietary preferences</p>
+                  </div>
+                </li>
+              </ul>
+              <Link
+                href="/blog/health-benefits-of-makhana"
+                className="inline-flex items-center gap-2 bg-forest text-white px-8 py-4 rounded-lg font-semibold hover:bg-forest-light transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
+                Learn More
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+            </div>
+            
+            <div className="bg-gradient-to-br from-sage via-sage-light to-white rounded-2xl p-8 shadow-lg">
+              <div className="space-y-6">
+                <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition">
+                  <h4 className="font-bold text-forest mb-2 flex items-center gap-2">
+                    <span className="text-2xl">💪</span> Protein Rich
+                  </h4>
+                  <p className="text-gray-600 text-sm">4.3g protein per 100g for muscle support</p>
+                </div>
+                <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition">
+                  <h4 className="font-bold text-forest mb-2 flex items-center gap-2">
+                    <span className="text-2xl">❤️</span> Heart Health
+                  </h4>
+                  <p className="text-gray-600 text-sm">Low sodium and cholesterol-free superfood</p>
+                </div>
+                <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition">
+                  <h4 className="font-bold text-forest mb-2 flex items-center gap-2">
+                    <span className="text-2xl">😴</span> Better Sleep
+                  </h4>
+                  <p className="text-gray-600 text-sm">Natural compounds promote restful sleep</p>
+                </div>
+                <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition">
+                  <h4 className="font-bold text-forest mb-2 flex items-center gap-2">
+                    <span className="text-2xl">🧠</span> Mental Clarity
+                  </h4>
+                  <p className="text-gray-600 text-sm">Contains minerals that support brain function</p>
+                </div>
               </div>
-            </article>
-
-            <article className="group bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-sage overflow-hidden">
-              <div className="h-2 bg-forest"></div>
-              <div className="p-6">
-                <span className="inline-block text-sm font-semibold text-forest bg-sage px-3 py-1 rounded-full mb-3">
-                  Nov 28, 2024
-                </span>
-                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-forest transition">
-                  Almonds and Brain Health
-                </h3>
-                <p className="text-gray-600 text-sm mb-5 leading-relaxed">
-                  Learn how almonds can boost your memory, concentration, and cognitive function naturally...
-                </p>
-                <Link href="/blog/almonds-brain-health" className="inline-flex items-center text-forest font-semibold hover:text-forest-light group-hover:gap-2 transition">
-                  Read More <span className="group-hover:translate-x-1 transition">→</span>
-                </Link>
-              </div>
-            </article>
-
-            <article className="group bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-sage overflow-hidden">
-              <div className="h-2 bg-forest"></div>
-              <div className="p-6">
-                <span className="inline-block text-sm font-semibold text-forest bg-sage px-3 py-1 rounded-full mb-3">
-                  Nov 25, 2024
-                </span>
-                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-forest transition">
-                  Raisins: Natural Energy
-                </h3>
-                <p className="text-gray-600 text-sm mb-5 leading-relaxed">
-                  Why raisins are the perfect natural energy booster for active individuals and athletes...
-                </p>
-                <Link href="/blog/raisins-natural-energy" className="inline-flex items-center text-forest font-semibold hover:text-forest-light group-hover:gap-2 transition">
-                  Read More <span className="group-hover:translate-x-1 transition">→</span>
-                </Link>
-              </div>
-            </article>
-          </div>
-
-          <div className="text-center mt-16">
-            <Link
-              href="/blog"
-              className="inline-flex items-center gap-2 bg-forest text-white px-10 py-4 rounded-xl hover:bg-forest-light transition-all duration-300 font-bold shadow-xl hover:shadow-2xl transform hover:scale-105"
-            >
-              View All Blog Posts
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -234,12 +187,12 @@ export default function Home() {
         </div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center mb-12">
+          <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-4">
-              What Our Customers Say
+              Loved by Our Customers
             </h2>
             <p className="text-sage text-lg max-w-2xl mx-auto">
-              Trusted by thousands of health-conscious customers across India
+              Join thousands of satisfied customers across India enjoying premium makhana
             </p>
           </div>
           
@@ -253,7 +206,7 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-white mb-6 leading-relaxed italic">
-                "The quality of makhana is exceptional! Fresh, crunchy, and perfectly roasted. Will definitely order again."
+                &ldquo;Exceptional quality! The makhana is so fresh and perfectly roasted. My entire family loves it. Great prices too!&rdquo;
               </p>
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 bg-sage rounded-full flex items-center justify-center text-forest font-bold text-xl">
@@ -275,7 +228,7 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-white mb-6 leading-relaxed italic">
-                "Best quality almonds I've ever purchased. Great taste, excellent packaging, and super fast delivery!"
+                &ldquo;I&apos;ve tried multiple brands but ISKI&apos;s makhana is unbeatable. Fresh, nutritious, and delivered on time every time!&rdquo;
               </p>
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 bg-gradient-to-br from-green-400 to-green-500 rounded-full flex items-center justify-center text-white font-bold text-xl">
@@ -297,59 +250,16 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-white mb-6 leading-relaxed italic">
-                "Premium quality cashews at reasonable prices. The freshness is unmatched. Highly recommended!"
+                &ldquo;The best snack for my kids. Healthy, tasty, and organic. I highly recommend ISKI Enterprises for their quality.&rdquo;
               </p>
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-gradient-to-br from-green-400 to-green-500 rounded-full flex items-center justify-center text-white font-bold text-xl">
-                  A
+                <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                  S
                 </div>
                 <div>
-                  <p className="text-white font-bold">Anita Patel</p>
-                  <p className="text-green-200 text-sm">Bangalore</p>
+                  <p className="text-white font-bold">Sneha Patel</p>
+                  <p className="text-blue-200 text-sm">Bangalore</p>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="relative py-20 bg-gradient-to-br from-gray-50 to-white overflow-hidden">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-green-100 rounded-full opacity-20 blur-3xl"></div>
-        
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="bg-gradient-to-br from-green-600 via-green-700 to-emerald-700 rounded-3xl p-12 md:p-16 shadow-2xl relative overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent"></div>
-            <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl"></div>
-            
-            <div className="relative z-10 text-center">
-              <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6">
-                Ready to Experience Premium Quality?
-              </h2>
-              <p className="text-green-100 text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
-                Join thousands of satisfied customers and discover the finest selection of dry fruits delivered fresh to your doorstep.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link
-                  href="/products"
-                  className="inline-flex items-center gap-2 bg-white text-green-700 px-10 py-4 rounded-xl hover:bg-gray-50 transition-all duration-300 font-bold shadow-xl hover:shadow-2xl transform hover:scale-105"
-                >
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
-                  </svg>
-                  Start Shopping
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
-                <Link
-                  href="/contact"
-                  className="inline-flex items-center gap-2 bg-green-800 text-white border-2 border-white/30 px-10 py-4 rounded-xl hover:bg-green-900 transition-all duration-300 font-bold shadow-xl backdrop-blur-sm"
-                >
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                  </svg>
-                  Contact Us
-                </Link>
               </div>
             </div>
           </div>

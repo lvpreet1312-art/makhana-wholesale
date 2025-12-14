@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact Us - DryFruit Store",
-  description: "Get in touch with us for any inquiries, feedback, or business partnerships.",
+  title: "Contact Us - ISKI Enterprises",
+  description: "Connect with ISKI Enterprises for makhana inquiries, feedback, partnerships, or bulk orders.",
 };
 
 export default function ContactPage() {
@@ -22,7 +22,7 @@ export default function ContactPage() {
             Contact Us
           </h1>
           <p className="text-lg text-gray-600 max-w-3xl leading-relaxed">
-            We'd love to hear from you. Whether you have questions about our products, feedback, or business inquiries, reach out to us anytime.
+            We’d love to hear from you. Whether you have questions about our products, feedback, or business inquiries, reach out to us anytime.
           </p>
         </div>
       </section>
@@ -65,12 +65,12 @@ export default function ContactPage() {
             </div>
 
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-8">We're Here to Help</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-8">We’re Here to Help</h2>
               <div className="space-y-6">
                 <div className="p-6 bg-green-50 rounded-lg border border-green-100 hover:border-green-300 transition">
                   <h3 className="text-lg font-bold text-gray-900 mb-2">🛍️ General Inquiries</h3>
                   <p className="text-gray-700">
-                    Have questions about our products? Need recommendations? Drop us a message and we'll help you out.
+                    Have questions about our products? Need recommendations? Drop us a message and we’ll help you out.
                   </p>
                 </div>
 
