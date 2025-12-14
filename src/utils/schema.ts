@@ -12,7 +12,7 @@ export function generateProductSchema(product: {
     description: product.description,
     brand: {
       "@type": "Brand",
-      name: "DryFruit Store",
+      name: "ISKI Enterprises",
     },
     offers: {
       "@type": "Offer",
@@ -51,19 +51,20 @@ export function generateOrganizationSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "DryFruit Store",
-    description: "Premium quality dry fruits online store",
-    url: "https://dryfruitstore.com",
+    name: "ISKI Enterprises",
+    description: "Premium quality makhana and dry fruits delivered with care",
+    url: "https://iskienterprises.com",
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "Customer Service",
-      telephone: "+91-1234-567-890",
-      email: "info@dryfruitstore.com",
+      telephone: "+91-95015-49258",
+      email: "info@iskienterprises.com",
     },
     address: {
       "@type": "PostalAddress",
-      streetAddress: "123 Market Street",
-      addressLocality: "Your City",
+      streetAddress: "Dakhram",
+      addressLocality: "Darbhanga",
+      addressRegion: "Bihar",
       addressCountry: "IN",
     },
   };

@@ -20,39 +20,41 @@ export default function HeroSection() {
           
           {/* LEFT CONTENT */}
           <div className="text-left">
-            <div className="-mt-4 pr-20 px-6 inline-block">
-              <span className="inline-flex items-center gap-2 px-5 py-2.5 bg-white text-forest text-sm font-bold rounded-full shadow-lg border border-forest">
+            <div className="-mt-2 pr-10 px-4 inline-block">
+              <span className="inline-flex items-center gap-2 px-4 py-2.5 bg-white text-forest text-sm font-bold rounded-full shadow-lg border border-forest">
                 ⭐ Premium Quality Assured 🌾
               </span>
             </div>
 
-            <h3 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-forest leading-tight tracking-tight">
-              Premium Plain Makhana{" "}
+            <h3 className="text-3xl md:text-4xl lg:text-5xl font-extrabold font-serif text-forest leading-tight tracking-tight">
+              Premium Quality{" "}
               <span className="relative inline-block">
-                <span className="block">Pure & Natural</span>
-                <span className="relative inline-block">
-                  <span className="relative block">Farm Fresh</span>
-                  <span className="absolute bottom-1 left-0 w-full h-3 bg-forest opacity-20 -rotate-1"></span>
+                <span className="block">MAKHANA</span>
+                <h4 className="text-2xl md:text-xl lg:text-3xl font-extrabold text-forest leading-tight tracking-tight">
+                  <span className="relative block">Wholesale & Bulk Supply</span>
+                
+            </h4>
+
                 </span>
-              </span>
             </h3>
+            
 
             <h4 className="mb-2">
               <span className="text-forest font-bold text-xl">Healthy Living</span>
             </h4>
 
             <p className="text-base md:text-lg text-gray-700 mb-10 leading-relaxed font-medium">
-              Experience the crunch of our premium Plain Makhana. Sourced from the best farms, naturally processed, and delivered fresh to your doorstep. The perfect guilt-free snack.
+              Experience the crunch of our premium  Makhana. Sourced from the best farms, naturally processed, and delivered fresh to your doorstep. The perfect guilt-free snack.
             </p>
 
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <Link href="/contact" className="group inline-flex items-center justify-center gap-2 bg-forest text-white px-10 py-4 rounded-xl hover:bg-forest-light transition-all duration-300 font-bold shadow-xl hover:shadow-2xl transform hover:scale-105">
-                Order Now
+                Contact Us
               </Link>
 
               <Link href="/about" className="group inline-flex items-center justify-center gap-2 bg-white text-forest border-2 border-forest px-10 py-4 rounded-xl hover:bg-sage-light transition-all duration-300 font-bold shadow-lg hover:shadow-xl">
-                Learn More
+                Our Vision
               </Link>
             </div>
           </div>

@@ -44,11 +44,12 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="relative">
-              <div className="bg-gradient-to-br from-green-100 to-green-50 h-96 rounded-2xl flex items-center justify-center shadow-lg border border-green-200">
-                <div className="text-center">
-                  <span className="text-8xl">🌾</span>
-                  <p className="text-gray-700 mt-4 font-semibold text-lg">Farm Fresh Quality</p>
-                </div>
+              <div className="relative h-96 rounded-2xl overflow-hidden shadow-lg border border-green-200">
+                <img
+                  src="/products/MakhanaFarming.png"
+                  alt="Farmer harvesting lotus in traditional attire"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>

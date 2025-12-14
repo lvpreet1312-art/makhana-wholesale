@@ -35,7 +35,7 @@ export default function ContactPage() {
                 <span className="text-3xl">📧</span>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Email</h3>
-              <p className="text-gray-700 font-semibold mb-1">info@dryfruitstore.com</p>
+              <p className="text-gray-700 font-semibold mb-1">info@iskienterprises.com</p>
               <p className="text-gray-600 text-sm">We respond within 24 hours</p>
             </div>
 
@@ -44,7 +44,7 @@ export default function ContactPage() {
                 <span className="text-3xl">📞</span>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Phone</h3>
-              <p className="text-gray-700 font-semibold mb-1">+91 1234-567-890</p>
+              <p className="text-gray-700 font-semibold mb-1">95015 49258</p>
               <p className="text-gray-600 text-sm">Mon-Sat, 9 AM - 6 PM IST</p>
             </div>
 
@@ -53,8 +53,8 @@ export default function ContactPage() {
                 <span className="text-3xl">📍</span>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Address</h3>
-              <p className="text-gray-700 font-semibold mb-1">123 Market Street</p>
-              <p className="text-gray-600 text-sm">Your City, India</p>
+              <p className="text-gray-700 font-semibold mb-1">Dakhram, Darbhanga</p>
+              <p className="text-gray-600 text-sm">Bihar, India</p>
             </div>
           </div>
 
@@ -80,7 +80,7 @@ export default function ContactPage() {
                     For quick responses, reach out to us on WhatsApp.
                   </p>
                   <a
-                    href="https://wa.me/911234567890"
+                    href="https://wa.me/919501549258"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block bg-gradient-to-r from-green-600 to-green-700 text-white px-6 py-2 rounded-lg hover:from-green-700 hover:to-green-800 transition font-semibold shadow-md hover:shadow-lg"

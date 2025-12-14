@@ -36,9 +36,9 @@ export default function AboutSection() {
             <div className="relative space-y-6">
               <div className="relative bg-white rounded-3xl overflow-hidden shadow-lg transform transition-all duration-500 hover:shadow-2xl hover:scale-105">
                 <Image
-                  src="/products/makhana.png"
+                  src="/products/makhana.jpeg"
                   alt="Healthy Food Package"
-                  width={500}
+                  width={400}
                   height={400}
                   className="w-full h-auto object-cover transition-transform duration-700 hover:scale-110"
                 />
@@ -59,9 +59,9 @@ export default function AboutSection() {
 
                 <div className={`relative rounded-2xl overflow-hidden shadow-lg transform transition-all duration-1000 delay-300 hover:shadow-2xl hover:scale-105 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                   <Image
-                    src="/products/mix.jpg.jpeg"
+                    src="/products/MakhanaHeroShuffle.jpeg"
                     alt="Fresh Vegetables"
-                    width={300}
+                    width={600}
                     height={350}
                     className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
                   />
@@ -76,7 +76,7 @@ export default function AboutSection() {
                     </svg>
                   </div>
                   <div className="text-white text-[9px] font-semibold uppercase tracking-wide leading-tight px-3">
-                    Certified as<br/>Organic<br/>Product
+                    Pure<br/>Organic<br/>Product
                   </div>
                 </div>
               </div>
