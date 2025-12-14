@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import ProductCard from "@/components/ProductCard";
 import products from "@/data/products.json";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Products - ISKI Enterprises",
@@ -27,32 +27,109 @@ export const metadata: Metadata = {
 
 
 export default function ProductsPage() {
+  const makhana = products[0];
+
   return (
     <div>
       <section className="relative overflow-hidden bg-gradient-to-br from-green-50 via-white to-green-50 py-16 md:py-20">
         <div className="absolute top-0 right-0 -mr-40 -mt-40 w-80 h-80 bg-green-200 rounded-full opacity-20 blur-3xl"></div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="mb-4 inline-block">
-            <span className="inline-block px-4 py-2 bg-green-100 text-green-700 text-sm font-semibold rounded-full">
-              🌾 Complete Collection
-            </span>
-          </div>
+          
           <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-green-600 to-green-800 bg-clip-text text-transparent mb-6">
-            Our Products
+            Our Product
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl leading-relaxed">
-            Explore our carefully selected collection of premium dry fruits, each chosen for its exceptional quality, nutritional value, and superior taste. Every product is Grade A certified.
+            Our signature product Makhana, is sourced directly from trusted farmers and carefully processed to preserve its natural taste, nutrition, and purity. Each batch undergoes strict quality checks to ensure uniform size, superior crunch, and zero compromise on freshness.
           </p>
         </div>
       </section>
 
-      <section className="py-20">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {products.map((product) => (
-              <ProductCard key={product.id} product={product} />
-            ))}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            <div className="relative">
+              <div className="sticky top-8">
+                <div className="relative bg-gradient-to-br from-pink-50 to-white rounded-3xl p-8 shadow-xl">
+                  {makhana.badge && (
+                    <div className="absolute top-6 left-6 z-10">
+                      <span className="inline-flex items-center gap-1 px-4 py-2 bg-green-600 text-white text-sm font-semibold rounded-full shadow-lg">
+                        <span>✨</span> {makhana.badge}
+                      </span>
+                    </div>
+                  )}
+                  <div className="relative h-96 w-full">
+                    <Image
+                      src={makhana.image}
+                      alt={makhana.name}
+                      fill
+                      className="object-contain"
+                      priority
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="space-y-8">
+              <div>
+                <div className="inline-block px-3 py-1 bg-green-100 text-green-700 text-sm font-semibold rounded-full mb-4">
+                  {makhana.grade}
+                </div>
+                <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                 Makhana 
+                </h2>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  {makhana.description}
+                </p>
+              </div>
+
+              <div className="bg-gradient-to-br from-green-50 to-white border border-green-100 rounded-2xl p-6">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                  <span>💚</span> Health Benefits
+                </h3>
+                <ul className="space-y-3">
+                  {makhana.healthBenefits.map((benefit, index) => (
+                    <li key={index} className="flex items-start gap-3 text-gray-700">
+                      <span className="text-green-600 mt-1">✓</span>
+                      <span>{benefit}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="bg-gradient-to-br from-blue-50 to-white border border-blue-100 rounded-2xl p-6">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                  <span>📊</span> Nutrition Facts
+                </h3>
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="bg-white rounded-lg p-4 shadow-sm">
+                    <p className="text-sm text-gray-600 mb-1">Serving Size</p>
+                    <p className="text-xl font-bold text-gray-900">{makhana.nutritionFacts.servingSize}</p>
+                  </div>
+                  <div className="bg-white rounded-lg p-4 shadow-sm">
+                    <p className="text-sm text-gray-600 mb-1">Calories</p>
+                    <p className="text-xl font-bold text-gray-900">{makhana.nutritionFacts.calories}</p>
+                  </div>
+                  <div className="bg-white rounded-lg p-4 shadow-sm">
+                    <p className="text-sm text-gray-600 mb-1">Protein</p>
+                    <p className="text-xl font-bold text-gray-900">{makhana.nutritionFacts.protein}</p>
+                  </div>
+                  <div className="bg-white rounded-lg p-4 shadow-sm">
+                    <p className="text-sm text-gray-600 mb-1">Fiber</p>
+                    <p className="text-xl font-bold text-gray-900">{makhana.nutritionFacts.fiber}</p>
+                  </div>
+                  <div className="bg-white rounded-lg p-4 shadow-sm">
+                    <p className="text-sm text-gray-600 mb-1">Fat</p>
+                    <p className="text-xl font-bold text-gray-900">{makhana.nutritionFacts.fat}</p>
+                  </div>
+                  <div className="bg-white rounded-lg p-4 shadow-sm">
+                    <p className="text-sm text-gray-600 mb-1">Carbs</p>
+                    <p className="text-xl font-bold text-gray-900">{makhana.nutritionFacts.carbs}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

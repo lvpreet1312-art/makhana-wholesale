@@ -17,9 +17,23 @@ export default function HeroSection() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          
+
+          {/* RIGHT IMAGE */}
+          <div className="flex justify-center lg:justify-end">
+
+            <div className="relative w-[350px] h-[350px] md:w-[500px] md:h-[500px] lg:left-[-50px]">
+              <Image
+                src="/products/makhana.png"
+                alt="Premium Plain Makhana"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
+          </div>
           {/* LEFT CONTENT */}
-          <div className="text-left">
+          <div className="text-center flex flex-col items-center">
+
             <div className="-mt-2 pr-10 px-4 inline-block">
               <span className="inline-flex items-center gap-2 px-4 py-2.5 bg-white text-forest text-sm font-bold rounded-full shadow-lg border border-forest">
                 ⭐ Premium Quality Assured 🌾
@@ -59,18 +73,8 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* RIGHT SIDE IMAGE */}
-          <div className="flex justify-center lg:justify-end">
-            <div className="relative w-[350px] h-[350px] md:w-[500px] md:h-[500px]">
-              <Image
-                src="/products/makhana.png"
-                alt="Premium Plain Makhana"
-                fill
-                className="object-contain"
-                priority
-              />
-            </div>
-          </div>
+          
+          
         </div>
       </div>
     </section>

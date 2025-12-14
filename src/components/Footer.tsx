@@ -13,7 +13,7 @@ export default function Footer() {
               <span className="font-bold text-xl text-white">ISKI Enterprises</span>
             </div>
             <p className="text-sm text-gray-400 leading-relaxed">
-              Premium quality dry fruits delivered to your doorstep with care, commitment, and the finest selection.
+              Premium quality Makhanas delivered to your doorstep with care, commitment, and the finest selection.
             </p>
             <div className="flex gap-4 pt-2">
               <a href="#" className="text-gray-400 hover:text-green-400 transition text-sm font-semibold">
@@ -33,7 +33,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <Link href="/products" className="text-gray-400 hover:text-green-400 transition text-sm">
-                  → Products
+                  → Product
                 </Link>
               </li>
               <li>
@@ -55,10 +55,10 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-white font-bold mb-6 text-lg">Our Products</h3>
+            <h3 className="text-white font-bold mb-6 text-lg">Our Product</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/products/makhana" className="text-gray-400 hover:text-green-400 transition text-sm">
+                <Link href="/products" className="text-gray-400 hover:text-green-400 transition text-sm">
                   → Makhana
                 </Link>
               </li>

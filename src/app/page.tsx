@@ -136,15 +136,7 @@ export default function Home() {
                   </div>
                 </li>
               </ul>
-              <Link
-                href="/blog/health-benefits-of-makhana"
-                className="inline-flex items-center gap-2 bg-forest text-white px-8 py-4 rounded-lg font-semibold hover:bg-forest-light transition-all duration-300 shadow-lg hover:shadow-xl"
-              >
-                Learn More
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
+              
             </div>
             
             <div className="bg-gradient-to-br from-sage via-sage-light to-white rounded-2xl p-8 shadow-lg">

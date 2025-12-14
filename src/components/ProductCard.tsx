@@ -67,24 +67,11 @@ export default function ProductCard({ product }: { product: Product }) {
           </h3>
         </div>
         
-        <p className="text-gray-600 text-sm mb-5 leading-relaxed line-clamp-2">
+        <p className="text-gray-600 text-sm mb-4 leading-relaxed">
           {product.description}
         </p>
 
-        <div className="flex items-center justify-between mb-5 pt-3 border-t border-gray-200">
-          <div>
-            <p className="text-xs text-gray-500 font-medium mb-1">PRICE</p>
-            <div className="flex items-baseline gap-2">
-              <span className="text-2xl font-bold text-forest">
-                {product.price}
-              </span>
-              {product.originalPrice && (
-                <span className="text-sm text-gray-400 line-through">
-                  {product.originalPrice}
-                </span>
-              )}
-            </div>
-          </div>
+        <div className="flex items-center justify-end mb-5 pt-3 border-t border-gray-200">
           <div className="flex items-center gap-1.5 text-forest text-xs font-semibold bg-sage px-2.5 py-1.5 rounded-full">
             <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
@@ -94,12 +81,12 @@ export default function ProductCard({ product }: { product: Product }) {
         </div>
 
         <Link
-          href={`/products/${product.slug}`}
+          href="/contact"
           className="block w-full bg-forest hover:bg-forest-light text-white text-center py-3 rounded-lg font-semibold shadow-md hover:shadow-lg flex items-center justify-center gap-2 transition-all duration-300 transform group-hover:scale-105"
         >
-          View Details
+          Contact Us
           <svg className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
           </svg>
         </Link>
       </div>
