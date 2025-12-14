@@ -58,15 +58,17 @@ export default function ProductsPage() {
                       </span>
                     </div>
                   )}
-                  <div className="relative h-96 w-full">
+                  <div className="relative bg-white rounded-3xl overflow-hidden shadow-lg transform transition-all duration-500 hover:shadow-2xl hover:scale-105">
                     <Image
                       src={makhana.image}
                       alt={makhana.name}
-                      fill
-                      className="object-contain"
+                      width={500}
+                      height={500}
+                      className="w-full h-auto object-cover transition-transform duration-700 hover:scale-110"
                       priority
                     />
                   </div>
+
                 </div>
               </div>
             </div>
